@@ -1,0 +1,19 @@
+# Self-hosted Command Center for n8n-vps.
+# Run on the VPS:  ./deploy.sh   (creates .env, builds, starts)
+services:
+  command-center:
+    build: .
+    container_name: command-center
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      HOST: "0.0.0.0"   # container-local; published only on 127.0.0.1 below
+      DATA_DIR: /data
+    ports:
+      - "127.0.0.1:8741:8741"
+    volumes:
+      - cc-data:/data
+
+volumes:
+  cc-data:
