@@ -1,0 +1,7 @@
+# Append this block to the Caddyfile on n8n-vps (the one already serving
+# n8n.sylvect.biz), then reload Caddy. Caddy handles TLS automatically.
+# Requires the Cloudflare DNS A record for dash.sylvect.biz first (see README).
+
+dash.sylvect.biz {
+	reverse_proxy 127.0.0.1:8741
+}
