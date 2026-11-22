@@ -32,3 +32,12 @@ The hourly job only refreshes what the API can see. Container states inside LXCs
 - `proxmox-snapshot.py` — the snapshot collector
 - `article.md` — the full build log (also on Substack)
 - `images/` — screenshots from the real build
+
+---
+
+## Follow the builds — or work with me
+
+- **Free guide:** [Build Your First Production-Style Homelab](https://sylvesterserg.github.io/sly-command-center/guide/)
+- **Build logs:** [SlyBuilds on Substack](https://slybuilds.substack.com/subscribe) — one build, one test, what broke
+- **For your business:** Sylvect IT Services brings this same infrastructure work to small businesses in NJ / NYC metro — [book a call](https://sylvect.biz/book/)
+- **More projects:** [github.com/sylvesterserg](https://github.com/sylvesterserg)
